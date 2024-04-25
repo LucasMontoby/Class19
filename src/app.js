@@ -3,6 +3,9 @@ const path = require("path");
 const app = express();
 const methodOverride  = require("method-override");
 
+const indexRouter = require( "./routes/index" );
+const moviesRouter = require('./routes/moviesRoutes');
+
 app.set('views', path.resolve(__dirname, './views'));
 app.set( "view engine", "ejs" );
 
@@ -14,3 +17,6 @@ app.use(methodOverride("_method"));
 app.listen(3001 , ()=>{
     console.log("Server is running on port 3001")
 });
+
+app.use( "/" , indexRouter );
+app.use(moviesRouter);
