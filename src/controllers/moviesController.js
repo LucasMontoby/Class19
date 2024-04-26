@@ -15,6 +15,8 @@ const moviesController = {
             res.render('moviesList', {movies})
         })
     },
+
+    
     add:  (req, res) => {
         let promGenres =  Genres.findAll();
         Promise.all([promGenres])
