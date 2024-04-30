@@ -6,10 +6,33 @@
     <title><%= title %></title>
 </head>
 <body>
+    <%- include ('./partials/header') %>
+
+
     <img src="/img/Pelicula.webp">
 
     <h1><%= title %></h1>
     <p>Bienvenidos a <%= title %></p>
+
+    
+    <div class="movie-list">
+        <div class="movie-card">
+            <img src="poster1.jpg" alt="Película 1">
+            <h2>Título de la Película 1</h2>
+            <p>Descripción corta de la Película 1...</p>
+            <a href="detalle-pelicula1.html">Ver detalles</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="poster2.jpg" alt="Película 2">
+            <h2>Título de la Película 2</h2>
+            <p>Descripción corta de la Película 2...</p>
+            <a href="detalle-pelicula2.html">Ver detalles</a>
+        </div>
+
+        <!-- Agrega más tarjetas de película según sea necesario -->
+    </div>
+
     <p><a href="/movies">Listado de Películas</a></p>
 </body>
 </html>

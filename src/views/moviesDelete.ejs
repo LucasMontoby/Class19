@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <%- include ('./partials/header') %>
+
+    <img src="/img/Pelicula.webp">
+
+   <h1>Estas seguro que queres borrar la sigueinte película: <%= Movie.title %></h1>
+   <form action="/movies/delete/<%=Movie.id%>?_method=PUT" method="POST">
+
+    <br>
+   <button type="submit">Borrar película</button>
+
+   <a href="/movies">Listado de Películas</a>
+
+   </form>
+
+</body>
+</html>

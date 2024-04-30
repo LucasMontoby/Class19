@@ -1,0 +1,28 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 20px; /* Espaciado interno del encabezado */
+}
+
+/* Estilos para la navegación dentro del encabezado */
+header nav ul {
+    list-style-type: none; /* Eliminar los puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline; /* Mostrar elementos de navegación en línea */
+    margin-right: 20px; /* Espaciado entre elementos de navegación */
+}
+
+header nav ul li a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Eliminar el subrayado de los enlaces */
+    font-weight: bold; /* Negrita para los enlaces */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Subrayar los enlaces al pasar el ratón */
+}
